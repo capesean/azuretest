@@ -5,10 +5,11 @@
   },
 
   "dependencies": {
-    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-*",
-    "Microsoft.AspNet.Server.Kestrel": "1.0.0-*",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-*",
-    "Microsoft.AspNet.Mvc": "6.0.0-*"
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc2-16069",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc2-16236",
+    "Microsoft.AspNet.Hosting": "1.0.0-rc2-16161",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc2-16770",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc2-16107"
   },
 
   "commands": {

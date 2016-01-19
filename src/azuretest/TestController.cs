@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNet.Mvc;
 using System;
 
-namespace IXESHA.API
+namespace azuretest
 {
     [Route("/api/[controller]")]
     public class TestController : Controller

@@ -11,12 +11,10 @@ namespace IXESHA
 
         public static void Main(string[] args)
         {
-            var hostingConfiguration = WebHostConfiguration.GetDefault(args);
-            var application = new WebHostBuilder()
-                .UseConfiguration(hostingConfiguration)
-                .UseIISPlatformHandlerUrl()
-                .UseStartup<Startup>()
-                .Build();
+            var application = new WebApplicationBuilder()
+                    .UseConfiguration(WebApplicationConfiguration.GetDefault(args))
+                    .UseStartup<Startup>()
+                    .Build();
 
             application.Run();
         }
@@ -32,6 +30,7 @@ namespace IXESHA
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
